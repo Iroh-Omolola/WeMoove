@@ -23,6 +23,7 @@ function About() {
                 </Col>
                 <Col lg={8} className='text-left p-5'>
                     <Form layout='vertical' className='login-form p-5'
+                        data-aos='fade-left'
                         data-aos-offset='200'
                         data-aos-duration='800'
                         data-aos-easing='ease-in-out-sine'
