@@ -9,12 +9,14 @@ import EditCar from './pages/EditCar'
 import UserBookings from './pages/UserBookings'
 import Home from './pages/Home'
 import 'antd/dist/antd.min.css';
+import About from './pages/About';
 
 
 const App = () => {
   const user =localStorage.getItem('user') 
   const routes = useRoutes([
-    { path: "/",  element: user ? <Home/> : <Navigate to="/login" />,},
+    { path: "/cars",  element: user ? <Home/> : <Navigate to="/login" />,},
+    { path: "/",  element: <About/>},
     { path: "login", element: <Login/>},
     { path: "register", element: <Register/>},
     { path: "/booking/:carid",  element: user ? <BookingCar/> : <Navigate to="/login" />,},

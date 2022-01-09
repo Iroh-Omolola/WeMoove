@@ -35,6 +35,18 @@ p{
   
   padding: 0;
 }
+.home{
+  display: flex;
+}
+.btn2{
+  box-shadow: none !important;
+  background-color : white !important;
+  color: orangered !important;
+  border: 1px solid orangered !important;
+  padding: 5px 15px !important;
+  outline: none !important;
+  width: fit-content;
+}
 .btn1{
   box-shadow: none !important;
   background-color : white !important;
@@ -120,8 +132,6 @@ button{
   transform: translateY(-50% , -50%);
   font-size:45px;
   opacity: 0.2 !important;
-  
-
 }
 .login a{
   color: white !important;
@@ -141,7 +151,11 @@ svg{
 a{
   color: orangered !important;
 }
-
+@media screen and (max-width: 500px) {
+.login-logo{
+  font-size:25px;
+}
+}
 @media screen and (max-width: 410px) {
   .carimg{
    margin-left:60px;
@@ -151,6 +165,15 @@ a{
 @media screen and (max-width: 372px) {
   .carimg{
    margin-left:40px;
-
+  }
+  .login-logo{
+    font-size:20px;
+    bottom: 28%;
   }
 }
+@media screen and (max-width: 320px) {
+  .login-logo{
+    font-size:20px;
+    bottom: 27%;
+  }
+  }
