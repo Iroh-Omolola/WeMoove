@@ -11,9 +11,12 @@ AOS.init();
 function Login() {
     const dispatch = useDispatch()
     const {loading} = useSelector(state=>state.alertsReducer)
-    function onFinish(values) {
-        dispatch(userLogin(values))
-        console.log(values)
+    function onFinish({username, password}) {
+        dispatch(userLogin({
+            username:'hero1',
+            password:'123456'
+        }))
+       
 
  }
     return (
@@ -34,11 +37,11 @@ function Login() {
                     <Form layout='vertical' className='login-form p-5' onFinish={onFinish}>
                          <h1>Login</h1>
                          <hr />
-                         <Form.Item name='username' label='Username' rules={[{required: true}]}>
-                             <Input/>
+                         <Form.Item name='username' label='Username' initialValue='hero1' rules={[{required: true}]}>
+                             <Input />
                          </Form.Item>
-                         <Form.Item name='password' label='Password' rules={[{required: true}]}>
-                             <Input type='password'/>
+                         <Form.Item name='password' label='Password' initialValue='123456' rules={[{required: true}]}>
+                             <Input type='password' value='123456'/>
                          </Form.Item>
 
                          <button className='btn1 mt-2'>Login</button>

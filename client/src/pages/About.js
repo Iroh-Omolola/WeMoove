@@ -1,5 +1,5 @@
 import React from 'react'
-import {Row , Col , Form} from 'antd'
+import {Row, Col , Form} from 'antd'
 import { Link } from 'react-router-dom'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -38,10 +38,9 @@ function About() {
                          Plan Your Trip Hours and enjoy the trip with WeMoove cars
                         </p>
                        <hr/>
-                         <Link to='/register'>
-                         <div className='btn2'>Register</div>  
+                         <Link to='/login'>
+                         <div className='btn2'>Login</div>  
                          </Link>
-                         <Link to='/login' style={{"float":"right", "marginTop":"-30px"}}>Login</Link>
                     </Form>
                 </Col>
 

@@ -1,8 +1,12 @@
 import axios from "axios";
 import {message} from 'antd'
 
-export const userLogin=(reqObj)=>async dispatch=>{
+export const userLogin=()=>async dispatch=>{
     
+    const reqObj={
+        username:'hero1',
+        password:'123456'
+    }
     dispatch({type: 'LOADING' , payload:true})
 
     try {
