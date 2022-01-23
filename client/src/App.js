@@ -9,7 +9,7 @@ import EditCar from './pages/EditCar'
 import UserBookings from './pages/UserBookings'
 import Home from './pages/Home'
 import 'antd/dist/antd.min.css';
-import About from './pages/About';
+import About from './pages/About'
 
 
 const App = () => {
